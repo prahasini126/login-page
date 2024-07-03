@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .left{
+            width: 50%;
+            height: 600px;
+            float: left;
+            background: aliceblue;
+        }
+       .left>img{
+        align-content: center;
+        height: 600px;
+        padding-left: 0px;
+        width: 600px;
+       }
+       
+       .right{
+        width: 50%;
+        background-color:#4c6fbf;
+        float: right;
+        height: 600px;
+       }
+       .p1{
+        text-align: center;
+        color: white;
+        font-family:  sans-serif;
+        padding-top: 50px;
+       }
+       .right>p{
+        color: white;
+        text-align: center;
+        text-decoration: none;
+
+       }
+       .p3{
+        margin-left: 190px;
+        height: 30px;
+        padding-left: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        outline: none;
+        background: white;
+        color:black;
+        width: 230px;
+       }
+       .p2,.p4{
+        padding-left: 190px;
+        color: white;
+        
+       }
+       .p5{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        color: white;
+        font-size: 15px;
+       }
+       .checkbox-label{
+        margin-right: 20px;
+        padding-left: 190px;
+        letter-spacing: 0.5px;
+       }
+       .checkbox-label input[type="checkbox"] {
+            margin-right: 1px;
+        }
+        .p6{
+            color: white;
+        }
+        .p7{
+            margin-left: 190px;
+            height: 30px;
+            padding-left: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            outline: none;
+            background: transparent;
+            color:white;
+            width: 240px;
+            margin-top: 30px;
+        }
+        .error-message {
+         color: #f7e7e4;
+         font-size: 14px;
+         margin-top: 10px;
+         
+        }
+        #username,#password{
+         margin-left: 179px;
+         width:282px;
+         height:38px;
+         border-radius: 6px;
+         border-color: white;
+         }
+
+    </style>
+</head>
+<body>
+    <script src="validation.js"></script>
+    <div class="content"></div>
+    <div class="left">
+      <img src="https://images.squarespace-cdn.com/content/v1/5c6e2dad94d71a1ea569fca0/1628817152797-IRVCKFO8NNLH6RVYT2BC/2.png" alt="logo" >
+    </div>
+    <div class="right">
+        <h1 class="p1">Login <br>Authentication</h1>
+        <p>A Web Development Task by <a class="p6" href="Devtern">Devtern</a></p>
+        <form class="fr" id="form" action="final.html" method="post" data-username="prahasini" data-password="taehyung">
+
+            <p class="p2">username</p>
+            <input class="p3" type="text" id="username" name="username" required>
+            <p class="p4">Password</p>
+            <input class="p3" type="password" id="password" name="password" required>
+            <div class="p5">
+                <label class="checkbox-label">
+                    <input type="checkbox">keep me logged in
+                </label>
+                <div id="error-message" class="error-message"></div>
+                <a class="p6" href="forgot_password.html">Forgot Password?</a>
+            </div>
+            <button class="p7" type="submit">Login</button>
+        </form>
+    </div>
+    
+    
+</body>
+
+</html>
